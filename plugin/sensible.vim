@@ -29,6 +29,7 @@ set shiftround
 set ttimeout
 set ttimeoutlen=50
 
+" but do highlight as you type you search phrase
 set incsearch
 " Use <C-L> to clear the highlighting of :set hlsearch.
 if maparg('<C-L>', 'n') ==# ''
@@ -89,3 +90,52 @@ endif
 inoremap <C-U> <C-G>u<C-U>
 
 " vim:set ft=vim et sw=2:
+
+"
+"
+" from https://www.linode.com/wiki/index.php/Vim_Tutorial
+" from https://github.com/dougblack/dotfiles/blob/master/.vimrc
+" 
+" 
+" ask what to do about unsaved/read-only files
+set confirm
+" share clipboard with windows clipboard
+set clipboard=unnamed
+" number of screen lines to use for the command-line
+set cmdheight=2
+" do not redraw while running macros
+set lazyredraw
+" buffer becomes hidden when it is abandoned
+set hidden
+" use mouse everywhere
+set mouse=a
+" shortens messages to avoid 'press a key' prompt
+set shortmess=atI
+" tell us when any line is changed via: commands
+set report=0
+" don't make noise on error messages
+set noerrorbells
+" make the splitters between windows be blank
+set fillchars=vert:\ ,stl:\ ,stlnc:\  
+" how many tenths of a second to blink matching brackets for
+set matchtime=5
+" do not highlight searched phrases
+" set nohlsearch
+set hlsearch
+" minimal number of screen lines to keep above and below the cursor
+set scrolloff=10
+" don't blink
+set novisualbell
+" ignore case sensitivity on search patterns
+set ignorecase
+" show chars on end of line, white spaces, tabs, etc
+" set list
+
+" Misc
+set ttyfast
+" Spaces and tabs
+set ts=4 sts=4 sw=4 expandtab
+" UI layout
+set number
+set cursorline
+
